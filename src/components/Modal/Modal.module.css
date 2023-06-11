@@ -1,0 +1,44 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: fit-content;
+  width: fit-content;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding-top: 0;
+}
+
+.modalHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay {
+    align-items: flex-end;
+  }
+
+  .wrapper {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

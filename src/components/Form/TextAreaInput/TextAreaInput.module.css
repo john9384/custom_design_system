@@ -1,0 +1,71 @@
+.textareaField {
+  height: 10rem;
+  width: 100%;
+  position: relative;
+}
+
+.textarea {
+  height: 100%;
+  width: 100%;
+  border: #dee2e6;
+  outline: 0;
+  height: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #0f5132;
+  transition: border 0.3s;
+  font-size: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.textarea:-moz-placeholder,
+.textarea:-ms-input-placeholder {
+  color: #0f5132;
+}
+
+.textarea:focus ~ label,
+.textarea:not(:placeholder-shown) ~ label {
+  transform: translateY(-15px) scale(0.6);
+}
+
+.textarea::placeholder {
+  color: transparent;
+}
+.textarea:not(:placeholder-shown) ~ label {
+  color: #0f5132;
+}
+
+.textarea:focus ~ label {
+  color: #0f5132;
+}
+
+.textarea:focus,
+.textarea:active {
+  border: 1px solid #f4b501;
+}
+
+.textarea.error {
+  background-color: #ffc2c2;
+  border: 1px solid #ffd8d8;
+}
+
+.label {
+  position: absolute;
+  left: 2rem;
+  top: 17px;
+  color: #0f5132;
+  font-family: sans-serif;
+  line-height: 14px;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: transform 200ms;
+  font-size: 1.5rem;
+}
+
+.errorWrapper {
+  display: block;
+  color: #dc3545;
+  padding: 2px 10px;
+}

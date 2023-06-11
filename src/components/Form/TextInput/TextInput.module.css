@@ -1,0 +1,82 @@
+.inputField {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  border: #dee2e6;
+  outline: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #0f5132;
+  transition: border 0.3s;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  background-color: #f5f5f5;
+}
+
+.input:-moz-placeholder,
+.input:-ms-input-placeholder {
+  color: #0f5132;
+}
+
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
+  top: 5px;
+  transform: scale(0.6);
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:not(:placeholder-shown) ~ label {
+  color: #0f5132;
+}
+
+.input:focus ~ label {
+  color: #0f5132;
+}
+
+.input:focus,
+.input:active {
+  border: 1px solid #f4b501;
+}
+
+.input.error {
+  background-color: #ffc2c2;
+  border: 1px solid #ffd8d8;
+}
+
+.label {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0f5132;
+  font-family: sans-serif;
+  line-height: 14px;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: all 200ms;
+  font-size: 1.5rem;
+}
+
+.errorWrapper {
+  display: block;
+  color: #dc3545;
+  padding: 2px 10px;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-55%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

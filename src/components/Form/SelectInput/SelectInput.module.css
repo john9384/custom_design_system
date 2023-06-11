@@ -1,0 +1,79 @@
+.selectField {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.select {
+  height: 100%;
+  width: 100%;
+  border: #dee2e6;
+  outline: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #0f5132;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+
+.isActive {
+  border: 1px solid #f4b501;
+}
+
+.label {
+  transform: translateY(-15px) scale(0.6);
+}
+
+.select.error {
+  background-color: #ffc2c2;
+  border: 1px solid #ffd8d8;
+}
+
+.label {
+  position: absolute;
+  left: 2rem;
+  top: 17px;
+  color: #0f5132;
+  font-family: sans-serif;
+  line-height: 14px;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: transform 200ms;
+  font-size: 1.5rem;
+}
+
+.selectInputValue {
+  display: none;
+}
+
+.selectDropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 98%;
+  padding: 1.5rem;
+  position: absolute;
+  top: 90%;
+  left: 1%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.errorWrapper {
+  display: block;
+  color: #dc3545;
+  padding: 2px 10px;
+}
+
+.dropdownIcon {
+  transform: translateY(20%);
+  cursor: pointer;
+}
